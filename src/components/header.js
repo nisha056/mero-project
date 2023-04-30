@@ -3,9 +3,17 @@ import React from "react";
 const Header = () => {
 
   return(
-    <div>
-    <h1> Hello People</h1>
-    <p>This is Nisha Sharma</p>
+    <div >
+      <div className ="Header">
+        <h1> Hi, this is
+
+        </h1>
+        <h2>Nisha Sharma</h2>
+        <p> Computer Engineer, IOE Pulchowk</p>
+   
+
+    
+    </div>
     </div>
 
   )

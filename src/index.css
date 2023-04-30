@@ -1,14 +1,95 @@
-body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-      sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
+*{
   
-  code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-      monospace;
-  }
+  margin:0;
+  font-family: Arial;
+}
+
+
+
+
+.Header{
+  margin:50px;
+}
+.Header h1{
   
+  color:violet;
+  
+  font-size:medium;
+  font-weight:bold;
+  text-align: center;
+  
+  margin:10px;
+
+}
+.Header h2{
+  color:Purple;
+  font-size:larger;
+  font-weight:bold;
+  text-align:center;
+  margin:10px;
+}
+.Header p{
+  margin:10px;
+  color: blueviolet;
+  font-style:italic;
+  text-align: center;
+}
+#Navbar{
+  margin-top:50px;
+
+ 
+  
+}
+
+#Navbar {
+  padding:20px;
+  margin: 0 auto;
+  max-width:50px;
+   
+  
+  align-items: center;
+  font-size:medium;
+  font-weight:bold ;
+  font-size: 160%;
+  display:flex;
+ 
+  
+
+}
+
+#Navbar a{
+  margin-left:10px;
+  text-decoration:none;
+  padding:10px;
+  color:violet;
+  
+}
+
+#Navbar a:hover{
+  color: blueviolet;
+
+}
+.Home {
+  
+  margin:10px;
+ 
+}
+
+.quote-list{
+  margin: 20px;
+  color:purple;
+  font-style:italic;
+}
+
+.quote-list:hover{
+  box-shadow: 1px 2px 2px 0.5px violet;
+  opacity: initial;
+}
+
+.About {
+  opacity:10;
+  margin:20px;
+  color: darkslateblue;
+
+}
+

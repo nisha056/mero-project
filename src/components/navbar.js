@@ -5,8 +5,19 @@ const Navbar = () => {
    
        
 			<div>
-        <h1> Introduction</h1>
+       
+        <nav id ="Navbar">
+        
+
+          <a href='/'>Home</a>
+          <a href='/Skills'>Skills</a>
+          <a href='/Experience'>Experience</a>
+          <a href='/Education'>Education</a>
+          <a href='/About'>About </a>
+
+        </nav>
       </div>
+      
   )
 }
 
