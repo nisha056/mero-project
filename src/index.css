@@ -34,12 +34,6 @@
   font-style:italic;
   text-align: center;
 }
-#Navbar{
-  margin-top:50px;
-
- 
-  
-}
 
 #Navbar {
   padding:20px;
@@ -53,6 +47,7 @@
   font-size: 160%;
   display:flex;
  
+ 
   
 
 }
@@ -63,6 +58,7 @@
   padding:10px;
   color:violet;
   
+  
 }
 
 #Navbar a:hover{
@@ -72,6 +68,7 @@
 .Home {
   
   margin:10px;
+  
  
 }
 
