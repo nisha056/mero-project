@@ -1,5 +1,6 @@
 import React,{ useState } from "react";
 import Quote from "./quote";
+import Navbar from "./navbar";
 
 const About = (props) => {
 
@@ -12,13 +13,16 @@ const About = (props) => {
    
     
     return (
+        <>
         <div className='About'>
+            <Navbar/>
             
-            <Quote quote={quote} title="My motivation for life" />
+            <Quote quote={quote} title={<h2 style={{color: 'violet', textDecoration: 'underline', textAlign:'center'}}>My motivation for life</h2>} />
             
 
        
         </div>
+        </>
 
 
       );

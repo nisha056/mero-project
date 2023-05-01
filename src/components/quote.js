@@ -1,6 +1,6 @@
 import React,{ useState } from "react";
 
-const Quote = ({quote,title}) => {
+const Quote = ({quote,title,body}) => {
     // const quote = props.quote;
     // const title= props.title;
   
@@ -14,6 +14,7 @@ const Quote = ({quote,title}) => {
           {quote.map( (quote) => (
             <div className ="quote-list" key= {quote.id}>
                 <h2>{quote.title} </h2>
+                <p>{quote.body}</p>
                
             </div>
           ))}
