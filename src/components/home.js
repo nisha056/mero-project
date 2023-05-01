@@ -3,8 +3,12 @@ import Navbar from "./navbar";
 
 
 
-import image1 from '../image/Nisha.jpg'
+// import image1 from '../image/Nisha.jpg'
+
+
 const Home = () => {
+  const image1 = require('../image/Nisha.jpg');
+
 
    
     
