@@ -17,7 +17,7 @@ const About = (props) => {
         <div className='About'>
             <Navbar/>
             
-            <Quote quote={quote} title={<h2 style={{color: 'violet', textDecoration: 'underline', textAlign:'center'}}>About Me</h2>} />
+            <Quote quote={quote} title={<h2 style={{color: 'black', textDecoration: 'underline', textAlign:'center'}}>About Me</h2>} />
             
 
        

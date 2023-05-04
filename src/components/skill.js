@@ -18,7 +18,7 @@ const Skill = (props) => {
         <Navbar/>
         <div className='boxes'>
             <Box box= {box} 
-            title={ <h2 style= {{color:'purple', textAlign:'center'}}> Not skilled fully..... still learning</h2>}/>
+            title={ <h2 style= {{ textAlign:'center'}}> Not skilled fully..... still learning</h2>}/>
             
        
 
