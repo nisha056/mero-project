@@ -87,15 +87,10 @@ display:flex; */
 }
 
 #Nav-content li a:hover{
-  color: red;
+  color: orange;
 
 }
-.Home {
-  
-  margin:10px;
-  
- 
-}
+
 
 .quote-list{
   margin: 50px;
@@ -116,6 +111,9 @@ display:flex; */
 .main-content{
   margin-top:0px;
 }
+#content p{
+  margin:100px;
+}
 
 
 
@@ -126,10 +124,7 @@ display:flex; */
   align-items:center;
   margin-bottom: 20px;
   
-  
-   
 
- 
  
   margin-left :180px;
   
@@ -193,8 +188,7 @@ img{
   
  
   align-items:start;
-  font-weight:bold;
-  font-size: large;
+  
   color:black;
   
   
