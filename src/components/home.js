@@ -7,7 +7,7 @@ import Navbar from "./navbar";
 
 
 const Home = () => {
-  const image1 = require('../Image/Nisha.jpg');
+  const image1 = require('../image/Nisha.jpg');
 
 
    
