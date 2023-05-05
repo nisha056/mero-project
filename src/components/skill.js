@@ -1,5 +1,6 @@
 import React , {useState} from "react";
-import Box from "./box";
+import Box from "../Image/box";
+
 import Navbar from "./navbar";
 
 const Skill = (props) => {
