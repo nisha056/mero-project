@@ -1,22 +1,26 @@
-
-
 import Home from "./components/home";
-import Education from "./components/education";
+import Navbar from "./components/navbar";
 import Experience from "./components/experience";
 import About from "./components/about";
-import Skill from "./components/skill";
-import { Routes, Route } from 'react-router-dom';
+import Footer from "./components/footer";
+import Project from "./components/project";
+import { Routes, Route } from "react-router-dom";
+import Contact from "./components/contact";
 
 function App() {
   return (
-    <Routes>
-      <Route path='/' element ={<Home/>}> </Route>
-      <Route path ='/skills' element={<Skill/>}></Route>
-      <Route path='/experience' element={<Experience/>}></Route>
-      <Route path='/education' element={<Education/>}></Route>
-      <Route path='/about' element={<About/>}></Route>
+    <>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/project" element={<Project />}></Route>
+        <Route path="/experience" element={<Experience />}></Route>
 
-    </Routes>
+        <Route path="/about" element={<About />}></Route>
+        <Route path="/contact" element={<Contact />}></Route>
+      </Routes>
+      <Footer />
+    </>
   );
 }
 

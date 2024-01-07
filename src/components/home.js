@@ -1,50 +1,44 @@
-import React,{ useState } from "react";
-import Navbar from "./navbar";
-
-
-
-// import image1 from '../image/Nisha.jpg'
-
+import React from "react";
+import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import {
+//   faGithub,
+//   faInstagram,
+//   faTwitter,
+//   faLinkedin,
+// } from "@fortawesome/free-solid-svg-icons";
 
 const Home = () => {
-  const image1 = require('../Image/Nisha.jpg');
+  const image1 = require("../Image/Nisha.jpg");
 
-
-   
-    
-    return (
-
-      
-      <div className="main-content" >
-      
-        <Navbar/>
-        <div id='Image-content'>
-        <img src={image1}/>
-        <div id ="content">
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-          <br></br>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          <br></br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
+  return (
+    <section id="home" className="hero">
+      <div className="container">
+        <div className="hero-content">
+          <h2>Designer, Learner and Frontend Developer</h2>
+          <p>On a mission to discover my next great adventure.</p>
         </div>
-        
+        <div className="hero-media">
+          <img className="picture" src={image1} alt="Profile Picture" />
+          <h2>Nisha Sharma</h2>
+          <div className="social-icons">
+            {/* <Link to="">
+              <FontAwesomeIcon icon={faGithub} />
+            </Link> */}
+            {/* <Link to="">
+              <FontAwesomeIcon icon="fa-brands fa-instagram" />
+            </Link> */}
+            {/* <Link to="">
+              <FontAwesomeIcon icon={faTwitter} />
+            </Link>
+            <Link to="">
+              <FontAwesomeIcon icon={faLinkedin} />
+            </Link> */}
+          </div>
         </div>
-        
-        
-       <h1>Nisha Sharma</h1>
-        <h2> Computer Engineer, IOE Pulchowk</h2>
-        
-        </div>
-       
-       
-       
+      </div>
+    </section>
+  );
+};
 
-       
-
-       
-        
-
-
-      );
-}
- 
 export default Home;
