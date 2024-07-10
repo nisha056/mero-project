@@ -1,25 +1,14 @@
-import React, { useState } from "react";
-import Quote from "./contact";
-import Navbar from "./navbar";
+import React from "react";
 
-const About = (props) => {
-  const [quote, setQuote] = useState([
-    { title: "Hello", body: "Whats up..............", id: 1 },
-    {
-      title: "Lorem ipsum dolor sit amet",
-      body: "consectetur adipiscing elit",
-      id: 2,
-    },
-  ]);
-
+const About = () => {
   return (
-    <section id="about" className="about">
-      <div className="container">
-        <h1>About</h1>
-        <div className="about-content">
-          <div className="about-text">
-            <h3>Hi, I'm Nisha Sharma!</h3>
-            <p>
+    <section className="w-full mx-auto min-h-custom-content flex flex-col justify-center bg-[#fff]">
+      <div className="w-full xl:w-[1200px] px-4 py-5 flex flex-col items-center gap-10">
+        <h1 className="text-[#ff4d71] text-4xl font-bold">About</h1>
+        <div>
+          <div className="flex flex-col gap-7">
+            <h3 className="font-bold text-2xl">Hi, I'm Nisha Sharma!</h3>
+            <p className="text-xl">
               I'm a Computer Enginner, graduated from Pulchowk Engineering
               Campus. I love to be somehow productive to mankind. I'm quietly
               confident, naturally curious, and perpetually working on improving

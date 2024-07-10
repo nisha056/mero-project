@@ -1,26 +1,58 @@
 import Home from "./components/home";
-import Navbar from "./components/navbar";
 import Experience from "./components/experience";
 import About from "./components/about";
-import Footer from "./components/footer";
 import Project from "./components/project";
 import { Routes, Route } from "react-router-dom";
 import Contact from "./components/contact";
+import Layout from "./components/Layout";
+import Resume from "./components/resume";
 
 function App() {
   return (
-    <>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />}></Route>
-        <Route path="/project" element={<Project />}></Route>
-        <Route path="/experience" element={<Experience />}></Route>
-
-        <Route path="/about" element={<About />}></Route>
-        <Route path="/contact" element={<Contact />}></Route>
-      </Routes>
-      <Footer />
-    </>
+    <Routes>
+      <Route
+        path="/"
+        element={
+          <Layout>
+            <Home />
+          </Layout>
+        }
+      />
+      <Route
+        path="/project"
+        element={
+          <Layout>
+            <Project />
+          </Layout>
+        }
+      />
+      <Route
+        path="/experience"
+        element={
+          <Layout>
+            <Experience />
+          </Layout>
+        }
+      />
+      <Route
+        path="/about"
+        element={
+          <Layout>
+            <About />
+          </Layout>
+        }
+      />
+      <Route
+        path="/contact"
+        element={
+          <Layout>
+            <Contact />
+          </Layout>
+        }
+      />
+      <Route path="/resume" element={<Resume />} />
+      <Route path="*" element={<div>Not Found</div>} />
+    </Routes>
   );
 }
 

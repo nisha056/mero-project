@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 
 const Project = (props) => {
   return (
-    <section id="projects" className="projects">
-      <div className="container">
-        <h1>Project</h1>
-        <p>Here are a few past projects I've worked on.</p>
+    <section className="w-full mx-auto min-h-custom-content flex flex-col justify-center bg-[#fff]">
+      <div className="w-full xl:w-[1200px] px-4 py-5 flex flex-col items-center gap-8">
+        <h1 className="text-[#ff4d71] text-4xl font-bold">Projects</h1>
+        <p className="text-xl">Here are a few past projects I've worked on.</p>
         <div className="project-cards">
           <div className="project-card">
             <div className="background-image image1"></div>

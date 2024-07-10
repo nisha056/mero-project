@@ -1,248 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
   color: black;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: sans-serif;
 }
 
 body {
   font-size: 18px;
-  background-color: #5d707f;
-  font-family: sans-serif;
-}
-
-.container {
-  width: 1200px;
-  margin: auto;
+  font-family: "IBM Plex Sans" sans-serif;
 }
 
 section {
-  min-height: 100vh;
+  /* min-height: 100vh; */
   display: flex;
   align-items: center;
   text-align: center;
-}
-
-@media screen and (max-width: 1300px) {
-  .container {
-    width: 90%;
-  }
-}
-
-/* ------------Navbar section -----------------*/
-
-header {
-  background-color: #a7a5c6;
-  position: sticky;
-  top: 0;
-  box-shadow: 0 1px 2px 1px #5d707f;
-  font-size: 20px;
-  z-index: 1;
-  height: 100%;
-}
-
-/* Styles the container for navigation elements */
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 30px;
-  height: 50px;
-}
-
-/* Styles the logo and links of the navigation bar*/
-
-.logo-wrapper,
-.links-wrapper {
-  display: flex;
-  align-items: center;
-}
-
-/* Styles the logo of navigation bar*/
-
-.logo-wrapper .logo {
-  color: #ff4d71;
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
-
-/* Styles the logo image */
-
-.logo img {
-  height: 60%;
-  margin-right: 5px;
-  border-radius: 50%;
-}
-
-/* Styles the navigation items to align horizontally*/
-
-.nav-items {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-}
-
-/* Styles both the logo and the links */
-
-.logo-wrapper a,
-.links-wrapper a {
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: bold;
-}
-
-/* Adds hover effect to the links */
-
-.links-wrapper a:hover {
-  color: #ff4d71;
-  cursor: pointer;
-}
-
-.hamburger {
-  display: none;
-}
-
-@media screen and (max-width: 720px) {
-  .links-wrapper {
-    display: none;
-    position: relative;
-  }
-  .open {
-    display: block;
-  }
-  .hamburger {
-    display: block;
-    background: none;
-    border: none;
-    cursor: pointer;
-  }
-  .bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px 0;
-    background-color: #808080;
-    transition: 0.4s;
-  }
-  .open .bar:nth-child(1) {
-    transform: rotate(-45deg) translate(-5px, 6px);
-  }
-  .open .bar:nth-child(2) {
-    opacity: 0;
-  }
-  .open .bar:nth-child(3) {
-    transform: rotate(45deg) translate(-5px, -6px);
-  }
-  .nav-items {
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    top: 50px;
-    right: 0;
-    width: 250px;
-    background-color: #a7a5c6;
-    padding-bottom: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px 3px rgba(0, 0, 0, 0.1);
-    z-index: 99;
-  }
-}
-
-/* --------- Hero Section ---------------- */
-
-.hero {
-  background: radial-gradient(circle, #a7a5c6, #6d8a96, #8797b2);
-}
-
-.hero-content {
-  margin-bottom: 2%;
-}
-
-.hero h2 {
-  font-weight: bold;
-  font-size: 32px;
-}
-
-.hero-media img {
-  width: 250px;
-  height: auto;
-  margin: 10px auto;
-  border-radius: 5px;
-}
-
-.social-icons {
-  margin-top: 5%;
-}
-
-/* Styles individual social icon links */
-
-.social-icons a {
-  text-decoration: none;
-  width: 18px;
-  height: 18px;
-  margin: 0 2px;
-}
-
-.social-icons i {
-  font-size: 18px;
-}
-
-/* Hover effect for Social Icon Links */
-
-.social-icons a:hover {
-}
-
-/* Active link color */
-
-.social-icons a:active {
-  color: blue;
-  /* Change active link color to a nicer color */
-}
-
-/* --------- About --------- */
-
-.about {
-  background: white;
-}
-
-.about h1 {
-  margin-bottom: 2%;
-  font-weight: bold;
-  font-size: 42px;
-  color: #ff4d71;
-  text-align: center;
-  margin-bottom: 2%;
-  font-weight: bold;
-}
-
-.about-text {
-  margin: 0 auto;
-}
-
-.about-text h3 {
-  font-weight: bold;
-  font-size: 24px;
-  margin-bottom: 5%;
-}
-
-.about-text p {
-  font-size: 24px;
-  margin-bottom: 5%;
 }
 
 /* ------------ Experience --------- */
@@ -270,9 +49,14 @@ nav {
 .experience-card {
   width: 250px;
   background-color: white;
+  cursor: pointer;
   border-radius: 10px;
   padding: 2% 2%;
   box-shadow: rgba(1, 0, 0.5, 0.5) 0 0 5px;
+}
+
+.experience-card:hover {
+  box-shadow: rgba(1, 0, 0.5, 0.5) 0 0 15px;
 }
 
 .experience-content img {
@@ -309,22 +93,6 @@ nav {
 }
 
 /* ------------ Projects ------------- */
-
-.projects {
-  background-color: white;
-  padding: 50px 0;
-}
-
-.projects h1 {
-  color: #ff4d71;
-  text-align: center;
-  margin-bottom: 2%;
-  font-weight: bold;
-}
-
-.projects p {
-  margin-bottom: 5%;
-}
 
 .project-cards {
   display: flex;
@@ -417,30 +185,6 @@ nav {
 }
 
 /* ------------ Contact -----------*/
-
-.contact {
-  background: radial-gradient(circle, #a7a5c6, #6d8a96, #8797b2);
-  color: black;
-  align-items: center;
-  padding: 50px 0;
-}
-
-.contact h1 {
-  text-align: center;
-  margin-bottom: 3%;
-  font-weight: bold;
-}
-
-.contact-form {
-  width: 90%;
-  text-align: center;
-}
-
-.form-group {
-  margin-bottom: 2%;
-  text-align: left;
-}
-
 label {
   font-size: 24px;
   margin-bottom: 2%;
@@ -460,34 +204,4 @@ textarea:focus {
   outline: none;
   box-shadow: none;
   border: 1px solid #66ced6;
-}
-
-.button {
-  background-color: white;
-  border: 2px solid #66ced6;
-  padding: 10px 28px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 20px;
-  font-family: "EuropaNuova-Regular", sans-serif;
-  cursor: pointer;
-  border-radius: 30px;
-}
-
-.button:hover {
-  background-color: #66ced6;
-  color: white;
-}
-
-/* ------- Footer ---------*/
-
-footer {
-  background-color: #a7a5c6;
-  padding: 10px;
-}
-
-footer p {
-  text-align: center;
-  font-size: 12px;
 }
