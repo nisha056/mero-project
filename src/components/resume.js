@@ -7,15 +7,20 @@ const Resume = () => {
   }, []);
   return (
     <div className="w-full min-h-screen p-5 bg-white">
-      <div className="w-[900px] p-4 mx-auto border-y-8 border-green-500">
-        <div className="py-5 flex justify-between">
+      <div className="w-[900px] p-4 mx-auto border-y-8 border-[#666]">
+        <div className="py-3 flex justify-between">
           <div className="w-1/2">
             <h1 className="uppercase text-5xl font-medium tracking-wide">
               Nisha Sharma
             </h1>
-            <h3 className="uppercase text-2xl italic pt-3 font-normal text-green-400">
+            <h3 className="uppercase text-2xl italic pt-3 font-normal text-[#666]">
               Computer Engineer
             </h3>
+            <p className="text-sm py-3 italic opacity-85">
+              Dynamic Technical Content Writer with extensive experience in
+              translating complex technical concepts into clear, concise, and
+              accessible content for a broad audience.
+            </p>
           </div>
           <div className="w-[310px] text-base leading-tight">
             <div className="flex gap-3 items-center py-1">
@@ -84,8 +89,8 @@ const Resume = () => {
             </div>
           </div>
         </div>
-        <div className="py-5">
-          <h2 className=" italic text-xl font-bold text-freen-400 mb-1 border-b-2 border-green-300">
+        <div className="py-3">
+          <h2 className=" italic text-xl font-bold mb-1 border-b-2 border-gray-300">
             Skills
           </h2>
           <div className="border-b-2 border-[#e7e7e7] flex gap-1 items-center">
@@ -115,8 +120,8 @@ const Resume = () => {
             </p>
           </div>
         </div>
-        <div className="py-5">
-          <h2 className=" italic text-xl font-bold mb-1 border-b-2 border-green-300">
+        <div className="py-3">
+          <h2 className=" italic text-xl font-bold mb-1 border-b-2 border-gray-300">
             Work Experience
           </h2>
           <div className="border-b-2 border-[#e7e7e7] py-2">
@@ -132,7 +137,7 @@ const Resume = () => {
           <div className="border-b-2 border-[#e7e7e7] py-2">
             <div className="flex justify-between">
               <h3 className="text-base font-bold">Gritfeat Solutions</h3>
-              <h3 className="text-base font-medium">May 2023 - July 2024</h3>
+              <h3 className="text-base font-medium">May 2023 - July 2023</h3>
             </div>
             <p className="text-sm font-bold">Frontend Intern</p>
             <p className="text-sm">
@@ -152,10 +157,23 @@ const Resume = () => {
             </p>
           </div>
         </div>
-        <div className="py-5">
-          <h2 className=" italic text-xl font-bold mb-1 border-b-2 border-green-300">
+        <div className="py-3">
+          <h2 className=" italic text-xl font-bold mb-1 border-b-2 border-gray-300">
             Education
           </h2>
+          <div className="border-b-2 border-[#e7e7e7] py-2">
+            <div className="flex justify-between">
+              <h3 className="text-base font-bold">
+                M.Sc. in Computer System and Knowledge Engineering
+              </h3>
+              <h3 className="text-base font-medium">2024 - 2026</h3>
+            </div>
+            <p className="text-sm font-bold">
+              Pulchowk Campus, IOE, Tribhuwan University
+            </p>
+            <p className="text-sm">Currently Studying</p>
+          </div>
+
           <div className="border-b-2 border-[#e7e7e7] py-2">
             <div className="flex justify-between">
               <h3 className="text-base font-bold">
@@ -164,7 +182,7 @@ const Resume = () => {
               <h3 className="text-base font-medium">2018 - 2023</h3>
             </div>
             <p className="text-sm font-bold">
-              Central Campus, IOE Pulchowk, Tribhuwan University
+              Pulchowk Campus, IOE, Tribhuwan University
             </p>
             <p className="text-sm">Percentage: 79.56</p>
           </div>
@@ -187,11 +205,16 @@ const Resume = () => {
             <p className="text-sm">GPA: 3.9</p>
           </div>
         </div>
-        <div className="py-5">
-          <h2 className=" italic text-xl font-bold mb-1 border-b-2 border-green-300">
-            Awards
+        <div className="py-3">
+          <h2 className=" italic text-xl font-bold mb-1 border-b-2 border-gray-300">
+            Accomplishments
           </h2>
           <div className="border-b-2 border-[#e7e7e7] py-2">
+            <h3 className="text-base font-medium">
+              Speaker as a Technical Content Writer at "Exploring Career Paths
+              in Tech", an event organized by PK IT Club
+            </h3>
+
             <h3 className="text-base font-medium">
               Scholarship in Pulchowk Campus (Regular)
             </h3>
@@ -199,7 +222,7 @@ const Resume = () => {
               Golden Jubilee Scholarship
             </h3>
             <h3 className="text-base font-medium">NEB Topper in grade 11</h3>
-            <h3 className="text-base font-medium">District topper in SLC</h3>
+          
           </div>
         </div>
       </div>
